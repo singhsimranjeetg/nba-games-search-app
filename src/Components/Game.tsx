@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 import GameModal from './GameModal';
 
-const MovieContainer = styled.div`
+const GameContainer = styled.div`
   display: flex;
   padding: 0.5rem 0;
   align-items: center;
@@ -15,33 +15,27 @@ const MovieContainer = styled.div`
   }
 `;
 
-// type GameProps = {
-//   Game: Movie;
-//   action: ListAction;
-//   onClick: (e?: React.MouseEvent) => void;
-// } & React.ButtonHTMLAttributes<HTMLButtonElement>;
-
 type GameProps = any;
 
-const GameComponent = ({ game, disabled, onClick, action }: GameProps) => {
-  const [movieModalOpen, setMovieModalOpen] = useState(false);
+const GameComponent = ({ game }: GameProps) => {
+  const [gameModalOpen, setGameModalOpen] = useState(false);
 
   const handleModalChange = useCallback(
-    () => setMovieModalOpen(!movieModalOpen),
-    [movieModalOpen]
+    () => setGameModalOpen(!gameModalOpen),
+    [gameModalOpen]
   );
 
   return (
-    <MovieContainer>
+    <GameContainer>
       <GameModal
         handleModalChange={handleModalChange}
         game={game}
-        open={movieModalOpen}
+        open={gameModalOpen}
       />
       <p
-        onClick={() => setMovieModalOpen(true)}
+        onClick={() => setGameModalOpen(true)}
       >{`${game.hTeam.fullName} VS ${game.vTeam.fullName}`}</p>
-    </MovieContainer>
+    </GameContainer>
   );
 };
 

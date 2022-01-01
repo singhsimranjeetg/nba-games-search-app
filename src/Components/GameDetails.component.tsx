@@ -34,9 +34,13 @@ const GameDetails = ({ game }: any) => {
         </TeamsContainer>
         <div className='mx-auto'>
           <p className='date'>{game.startTimeUTC.slice(0, 10)}</p>
-          <p className='venue'>
-            {game.arena}, {game.city}, {game.country}
-          </p>
+          {game.arena ? (
+            <p className='venue'>
+              {game.arena}, {game.city}, {game.country}
+            </p>
+          ) : (
+            ''
+          )}
         </div>
       </GameDetailsContainer>
     </>

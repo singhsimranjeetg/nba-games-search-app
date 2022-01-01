@@ -5,15 +5,14 @@ import { GlobalStyles } from './global.styles';
 import { AppProvider, Autocomplete } from '@shopify/polaris';
 import enTranslations from '@shopify/polaris/locales/en.json';
 import SearchMajor from './assets/SearchMajor.svg';
-import { ListAction } from './util/interfaces';
 import GameComponent from './Components/Game';
 
 // Mock Data
-import { GamesData } from './mock/gamesByDate';
+// import { GamesData } from './mock/gamesByDate';
 
 //real
-// const API_KEY = process.env.REACT_APP_API_KEY;
-// const HOST_URL = `api-nba-v1.p.rapidapi.com`;
+const API_KEY = process.env.REACT_APP_API_KEY;
+const HOST_URL = `api-nba-v1.p.rapidapi.com`;
 
 const AppContainer = styled.div`
   display: flex;
@@ -130,49 +129,38 @@ const App = () => {
 
   const getGamesByDate = async (date: string) => {
     //real
-    // fetch(`https://${HOST_URL}/games/date/${date}`, {
-    //   method: 'GET',
-    //   headers: {
-    //     'x-rapidapi-host': `${HOST_URL}`,
-    //     'x-rapidapi-key': `${API_KEY}`,
-    //   },
-    // })
-    //   .then(async (response) => {
-    //     const results = await response.json();
-    //     if (results) {
-    //       // const formattedList = formatMovies(results.api.games);
-    //       setSearchResults(results.api.games);
-    //       setActiveSearchQuery(searchQuery);
-    //     } else {
-    //       setBannerText('No games related to that date were found!');
-    //       clearSearch();
-    //     }
-
-    //     // setGameDetails(results.api.game);
-    //   })
-    //   .catch((err) => {
-    //     console.error(err);
-    //   });
-    setSearchResults(GamesData);
-    setActiveSearchQuery(searchQuery);
-    console.log('searchresults', searchResults);
+    fetch(`https://${HOST_URL}/games/date/${date}`, {
+      method: 'GET',
+      headers: {
+        'x-rapidapi-host': `${HOST_URL}`,
+        'x-rapidapi-key': `${API_KEY}`,
+      },
+    })
+      .then(async (response) => {
+        const results = await response.json();
+        if (results) {
+          setSearchResults(results.api.games);
+          setActiveSearchQuery(searchQuery);
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+    //mock
+    // setSearchResults(GamesData);
+    // setActiveSearchQuery(searchQuery);
+    // console.log('searchresults', searchResults);
   };
 
   interface GameListProps {
     games: any;
     activeDisabled?: boolean;
-    action: ListAction;
   }
-  const GameList = ({
-    games,
-    action,
-    activeDisabled = false,
-  }: GameListProps) => (
+  const GameList = ({ games, activeDisabled = false }: GameListProps) => (
     <div>
       {games.map((game: any) => (
         <GameComponent
           key={game.gameId}
-          action={action}
           game={game}
           disabled={activeDisabled}
         ></GameComponent>
@@ -222,11 +210,7 @@ const App = () => {
                   {activeSearchQuery && (
                     <ListContainer id='search-results'>
                       <GameInstructions />
-                      <GameList
-                        games={searchResults}
-                        action='ADD'
-                        activeDisabled
-                      />
+                      <GameList games={searchResults} activeDisabled />
                     </ListContainer>
                   )}
                 </Card>
