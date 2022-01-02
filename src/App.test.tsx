@@ -38,7 +38,7 @@ describe('rendering components', () => {
   });
 });
 
-describe('<App />', () => {
+describe('Test <App />', () => {
   it('renders a search button', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find('#search-button').exists()).toBeTruthy();
