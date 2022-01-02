@@ -44,3 +44,8 @@ describe('Test <App />', () => {
     expect(wrapper.find('#search-button').exists()).toBeTruthy();
   });
 });
+
+//snapshot tests
+it('App', () => {
+  expect(shallow(<App />)).toMatchSnapshot();
+});

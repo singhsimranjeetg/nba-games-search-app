@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const CardContainer = styled.div`
   display: flex;
@@ -29,10 +29,13 @@ const CardContainer = styled.div`
 interface CardProps {
   children?: React.ReactFragment | HTMLCollection | string;
   style?: React.CSSProperties | undefined;
+  className?: string;
 }
 
 const Card = ({ children, style }: CardProps) => (
-  <CardContainer style={style}>{children}</CardContainer>
+  <div>
+    <CardContainer style={style}>{children}</CardContainer>
+  </div>
 );
 
 export default Card;

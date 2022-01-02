@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests GameDetails 1`] = `
+<Fragment>
+  <styled.div>
+    <styled.div>
+      <Team
+        key="2"
+        team={
+          Object {
+            "allStar": "0",
+            "fullName": "Boston Celtics",
+            "leaders": Array [
+              Object {
+                "name": "Daniel Theis",
+                "playerId": "886",
+                "points": "8",
+              },
+              Object {
+                "name": "Daniel Theis",
+                "playerId": "886",
+                "rebounds": "3",
+              },
+              Object {
+                "assists": "4",
+                "name": "Kemba Walker",
+                "playerId": "538",
+              },
+              Object {
+                "name": "Jaylen Brown",
+                "playerId": "75",
+                "rebounds": "10",
+              },
+              Object {
+                "assists": "2",
+                "name": "Enes Freedom",
+                "playerId": "291",
+              },
+              Object {
+                "name": "Kemba Walker",
+                "playerId": "538",
+                "points": "39",
+              },
+              Object {
+                "name": "Jayson Tatum",
+                "playerId": "882",
+                "rebounds": "9",
+              },
+              Object {
+                "assists": "5",
+                "name": "Marcus Smart",
+                "playerId": "486",
+              },
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png",
+            "nbaFranchise": "1",
+            "nickname": "Celtics",
+            "score": Object {
+              "linescore": Array [
+                "30",
+                "27",
+                "34",
+                "30",
+              ],
+              "loss": "4",
+              "points": "121",
+              "seriesLoss": "0",
+              "seriesWin": "1",
+              "win": "13",
+            },
+            "shortName": "BOS",
+            "teamId": "2",
+          }
+        }
+      />
+      <span>
+        VS
+      </span>
+      <Team
+        key="4"
+        team={
+          Object {
+            "allStar": "0",
+            "fullName": "Brooklyn Nets",
+            "leaders": Array [
+              Object {
+                "name": "Jarrett Allen",
+                "playerId": "727",
+                "points": "7",
+              },
+              Object {
+                "name": "Jarrett Allen",
+                "playerId": "727",
+                "rebounds": "14",
+              },
+              Object {
+                "assists": "11",
+                "name": "Spencer Dinwiddie",
+                "playerId": "142",
+              },
+              Object {
+                "name": "Garrett Temple",
+                "playerId": "507",
+                "points": "22",
+              },
+              Object {
+                "assists": "4",
+                "name": "Theo Pinson",
+                "playerId": "1013",
+              },
+            ],
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/130px-Brooklyn_Nets_newlogo.svg.png",
+            "nbaFranchise": "1",
+            "nickname": "Nets",
+            "score": Object {
+              "linescore": Array [
+                "23",
+                "40",
+                "23",
+                "24",
+              ],
+              "loss": "9",
+              "points": "110",
+              "seriesLoss": "1",
+              "seriesWin": "0",
+              "win": "9",
+            },
+            "shortName": "BKN",
+            "teamId": "4",
+          }
+        }
+      />
+    </styled.div>
+    <div
+      className="mx-auto"
+    >
+      <p
+        className="date"
+      >
+        2019-11-28
+      </p>
+      <p
+        className="venue"
+      >
+        TD Garden
+        , 
+        Boston
+        , 
+        USA
+      </p>
+    </div>
+  </styled.div>
+</Fragment>
+`;

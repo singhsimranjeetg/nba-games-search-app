@@ -1,0 +1,366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App 1`] = `
+<AppProvider$1
+  i18n={
+    Object {
+      "Polaris": Object {
+        "ActionMenu": Object {
+          "RollupActions": Object {
+            "rollupButton": "Actions",
+          },
+        },
+        "Actions": Object {
+          "moreActions": "More actions",
+        },
+        "Autocomplete": Object {
+          "spinnerAccessibilityLabel": "Loading",
+        },
+        "Avatar": Object {
+          "label": "Avatar",
+          "labelWithInitials": "Avatar with initials {initials}",
+        },
+        "Badge": Object {
+          "PROGRESS_LABELS": Object {
+            "complete": "Complete",
+            "incomplete": "Incomplete",
+            "partiallyComplete": "Partially complete",
+          },
+          "STATUS_LABELS": Object {
+            "attention": "Attention",
+            "critical": "Critical",
+            "info": "Info",
+            "new": "New",
+            "success": "Success",
+            "warning": "Warning",
+          },
+          "progressAndStatus": "{statusLabel} {progressLabel}",
+        },
+        "Button": Object {
+          "connectedDisclosureAccessibilityLabel": "Related actions",
+          "spinnerAccessibilityLabel": "Loading",
+        },
+        "Common": Object {
+          "cancel": "Cancel",
+          "checkbox": "checkbox",
+          "clear": "Clear",
+          "close": "Close",
+          "more": "More",
+          "newWindowAccessibilityHint": "(opens a new window)",
+          "submit": "Submit",
+          "undo": "Undo",
+        },
+        "ContextualSaveBar": Object {
+          "discard": "Discard",
+          "save": "Save",
+        },
+        "DataTable": Object {
+          "navAccessibilityLabel": "Scroll table {direction} one column",
+          "sortAccessibilityLabel": "sort {direction} by",
+          "totalRowHeading": "Total",
+          "totalsRowHeading": "Totals",
+        },
+        "DatePicker": Object {
+          "days": Object {
+            "friday": "Friday",
+            "monday": "Monday",
+            "saturday": "Saturday",
+            "sunday": "Sunday",
+            "thursday": "Thursday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+          },
+          "daysAbbreviated": Object {
+            "friday": "Fr",
+            "monday": "Mo",
+            "saturday": "Sa",
+            "sunday": "Su",
+            "thursday": "Th",
+            "tuesday": "Tu",
+            "wednesday": "We",
+          },
+          "end": "End of range",
+          "months": Object {
+            "april": "April",
+            "august": "August",
+            "december": "December",
+            "february": "February",
+            "january": "January",
+            "july": "July",
+            "june": "June",
+            "march": "March",
+            "may": "May",
+            "november": "November",
+            "october": "October",
+            "september": "September",
+          },
+          "nextMonth": "Show next month, {nextMonth} {nextYear}",
+          "previousMonth": "Show previous month, {previousMonthName} {showPreviousYear}",
+          "start": "Start of range",
+          "today": "Today ",
+        },
+        "DiscardConfirmationModal": Object {
+          "message": "If you discard changes, you’ll delete any edits you made since you last saved.",
+          "primaryAction": "Discard changes",
+          "secondaryAction": "Continue editing",
+          "title": "Discard all unsaved changes",
+        },
+        "DropZone": Object {
+          "FileUpload": Object {
+            "actionHintFile": "or drop files to upload",
+            "actionHintImage": "or drop images to upload",
+            "actionTitleFile": "Add file",
+            "actionTitleImage": "Add image",
+            "label": "Upload file",
+          },
+          "errorOverlayTextFile": "File type is not valid",
+          "errorOverlayTextImage": "Image type is not valid",
+          "overlayTextFile": "Drop file to upload",
+          "overlayTextImage": "Drop image to upload",
+        },
+        "EmptySearchResult": Object {
+          "altText": "Empty search results",
+        },
+        "Filters": Object {
+          "cancel": "Cancel",
+          "clear": "Clear",
+          "clearAllFilters": "Clear all filters",
+          "clearLabel": "Clear {filterName}",
+          "done": "Done",
+          "filter": "Filter {resourceName}",
+          "moreFilters": "More filters",
+          "moreFiltersWithCount": "More filters ({count})",
+          "noFiltersApplied": "No filters applied",
+        },
+        "Frame": Object {
+          "Navigation": Object {
+            "closeMobileNavigationLabel": "Close navigation",
+          },
+          "skipToContent": "Skip to content",
+        },
+        "Icon": Object {
+          "backdropWarning": "The {color} icon doesn’t accept backdrops. The icon colors that have backdrops are: {colorsWithBackDrops}",
+        },
+        "Loading": Object {
+          "label": "Page loading bar",
+        },
+        "MediaCard": Object {
+          "popoverButton": "Actions",
+        },
+        "Modal": Object {
+          "iFrameTitle": "body markup",
+          "modalWarning": "These required properties are missing from Modal: {missingProps}",
+        },
+        "Pagination": Object {
+          "next": "Next",
+          "pagination": "Pagination",
+          "previous": "Previous",
+        },
+        "ProgressBar": Object {
+          "exceedWarningMessage": "Values passed to the progress prop shouldn’t exceed 100. Setting {progress} to 100.",
+          "negativeWarningMessage": "Values passed to the progress prop shouldn’t be negative. Resetting {progress} to 0.",
+        },
+        "ResourceList": Object {
+          "BulkActions": Object {
+            "actionsActivatorLabel": "Actions",
+            "moreActionsActivatorLabel": "More actions",
+            "warningMessage": "To provide a better user experience. There should only be a maximum of {maxPromotedActions} promoted actions.",
+          },
+          "DateSelector": Object {
+            "FilterLabelForValue": Object {
+              "coming_month": "next month",
+              "coming_quarter": "in the next 3 months",
+              "coming_week": "next week",
+              "coming_year": "in the next year",
+              "on_or_after": "after {date}",
+              "on_or_before": "before {date}",
+              "past_month": "in the last month",
+              "past_quarter": "in the last 3 months",
+              "past_week": "in the last week",
+              "past_year": "in the last year",
+            },
+            "SelectOptions": Object {
+              "ComingMonth": "next month",
+              "ComingQuarter": "in the next 3 months",
+              "ComingWeek": "next week",
+              "ComingYear": "in the next year",
+              "OnOrAfter": "on or after",
+              "OnOrBefore": "on or before",
+              "PastMonth": "in the last month",
+              "PastQuarter": "in the last 3 months",
+              "PastWeek": "in the last week",
+              "PastYear": "in the last year",
+            },
+            "dateFilterLabel": "Select a value",
+            "dateValueError": "Match YYYY-MM-DD format",
+            "dateValueLabel": "Date",
+            "dateValuePlaceholder": "YYYY-MM-DD",
+          },
+          "FilterControl": Object {
+            "textFieldLabel": "Search {resourceNamePlural}",
+          },
+          "FilterCreator": Object {
+            "addFilterButtonLabel": "Add filter",
+            "filterButtonLabel": "Filter",
+            "selectFilterKeyPlaceholder": "Select a filter…",
+            "showAllWhere": "Show all {resourceNamePlural} where:",
+          },
+          "FilterValueSelector": Object {
+            "selectFilterValuePlaceholder": "Select a filter…",
+          },
+          "Item": Object {
+            "actionsDropdown": "Actions dropdown",
+            "actionsDropdownLabel": "Actions for {accessibilityLabel}",
+            "viewItem": "View details for {itemName}",
+          },
+          "a11yCheckboxDeselectAllMultiple": "Deselect all {itemsLength} {resourceNamePlural}",
+          "a11yCheckboxDeselectAllSingle": "Deselect {resourceNameSingular}",
+          "a11yCheckboxSelectAllMultiple": "Select all {itemsLength} {resourceNamePlural}",
+          "a11yCheckboxSelectAllSingle": "Select {resourceNameSingular}",
+          "allFilteredItemsSelected": "All {itemsLength}+ {resourceNamePlural} in this filter are selected.",
+          "allItemsSelected": "All {itemsLength}+ {resourceNamePlural} in your store are selected.",
+          "ariaLivePlural": "{itemsLength} items",
+          "ariaLiveSingular": "{itemsLength} item",
+          "defaultItemPlural": "items",
+          "defaultItemSingular": "item",
+          "emptySearchResultDescription": "Try changing the filters or search term",
+          "emptySearchResultTitle": "No {resourceNamePlural} found",
+          "loading": "Loading {resource}",
+          "selectAllFilteredItems": "Select all {itemsLength}+ {resourceNamePlural} in this filter",
+          "selectAllItems": "Select all {itemsLength}+ {resourceNamePlural} in your store",
+          "selectButtonText": "Select",
+          "selected": "{selectedItemsCount} selected",
+          "showing": "Showing {itemsCount} {resource}",
+          "showingTotalCount": "Showing {itemsCount} of {totalItemsCount} {resource}",
+          "sortingLabel": "Sort by",
+        },
+        "SkeletonPage": Object {
+          "loadingLabel": "Page loading",
+        },
+        "Spinner": Object {
+          "warningMessage": "The color {color} is not meant to be used on {size} spinners. The colors available on large spinners are: {colors}",
+        },
+        "Tabs": Object {
+          "toggleTabsLabel": "More tabs",
+        },
+        "Tag": Object {
+          "ariaLabel": "Remove {children}",
+        },
+        "TextField": Object {
+          "characterCount": "{count} characters",
+          "characterCountWithMaxLength": "{count} of {limit} characters used",
+        },
+        "TooltipOverlay": Object {
+          "accessibilityLabel": "Tooltip: {label}",
+        },
+        "TopBar": Object {
+          "SearchField": Object {
+            "clearButtonLabel": "Clear",
+            "search": "Search",
+          },
+          "toggleMenuLabel": "Toggle menu",
+        },
+        "VideoThumbnail": Object {
+          "playButtonA11yLabel": Object {
+            "default": "Play video",
+            "defaultWithDuration": "Play video of length {duration}",
+            "duration": Object {
+              "hours": Object {
+                "one": Object {
+                  "andMinute": "{hourCount} hour and {minuteCount} minute",
+                  "andMinutes": "{hourCount} hour and {minuteCount} minutes",
+                  "andSecond": "{hourCount} hour and {secondCount} second",
+                  "andSeconds": "{hourCount} hour and {secondCount} seconds",
+                  "minuteAndSecond": "{hourCount} hour, {minuteCount} minute, and {secondCount} second",
+                  "minuteAndSeconds": "{hourCount} hour, {minuteCount} minute, and {secondCount} seconds",
+                  "minutesAndSecond": "{hourCount} hour, {minuteCount} minutes, and {secondCount} second",
+                  "minutesAndSeconds": "{hourCount} hour, {minuteCount} minutes, and {secondCount} seconds",
+                  "only": "{hourCount} hour",
+                },
+                "other": Object {
+                  "andMinute": "{hourCount} hours and {minuteCount} minute",
+                  "andMinutes": "{hourCount} hours and {minuteCount} minutes",
+                  "andSecond": "{hourCount} hours and {secondCount} second",
+                  "andSeconds": "{hourCount} hours and {secondCount} seconds",
+                  "minuteAndSecond": "{hourCount} hours, {minuteCount} minute, and {secondCount} second",
+                  "minuteAndSeconds": "{hourCount} hours, {minuteCount} minute, and {secondCount} seconds",
+                  "minutesAndSecond": "{hourCount} hours, {minuteCount} minutes, and {secondCount} second",
+                  "minutesAndSeconds": "{hourCount} hours, {minuteCount} minutes, and {secondCount} seconds",
+                  "only": "{hourCount} hours",
+                },
+              },
+              "minutes": Object {
+                "one": Object {
+                  "andSecond": "{minuteCount} minute and {secondCount} second",
+                  "andSeconds": "{minuteCount} minute and {secondCount} seconds",
+                  "only": "{minuteCount} minute",
+                },
+                "other": Object {
+                  "andSecond": "{minuteCount} minutes and {secondCount} second",
+                  "andSeconds": "{minuteCount} minutes and {secondCount} seconds",
+                  "only": "{minuteCount} minutes",
+                },
+              },
+              "seconds": Object {
+                "one": "{secondCount} second",
+                "other": "{secondCount} seconds",
+              },
+            },
+          },
+        },
+      },
+    }
+  }
+>
+  <styled.div>
+    <Memo(l) />
+    <styled.div>
+      <styled.div>
+        <styled.div>
+          <h1>
+            NBA Games Search App
+          </h1>
+        </styled.div>
+        <label>
+          Search games by date using the date picker below.
+        </label>
+        <styled.div>
+          <styled.div>
+            <Card>
+              <TextField$1
+                label="Games Date"
+                onChange={[Function]}
+                prefix={
+                  <styled.img
+                    alt="search icon"
+                    src="SearchMajor.svg"
+                  />
+                }
+                type="date"
+                value=""
+              />
+              <styled.div>
+                <styled.button
+                  id="search-button"
+                  onClick={[Function]}
+                >
+                  Search
+                </styled.button>
+              </styled.div>
+            </Card>
+            <Card>
+              <label>
+                <b>
+                  Games results
+                   
+                  will appear here
+                </b>
+              </label>
+            </Card>
+          </styled.div>
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</AppProvider$1>
+`;
